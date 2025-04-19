@@ -26,11 +26,18 @@
     }
 
     nav a {
-      color: #cbd5e1;
-      margin-left: 1.5rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
+  color: #cbd5e1;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
 
     .hero {
       background-color: #0f172a;
@@ -88,19 +95,27 @@
     }
 
     .project-card {
-      background-color: #0f172a;
-      padding: 1rem;
-      border-radius: 10px;
-      width: 250px;
-      text-align: left;
-      color: #cbd5e1;
-      border: 1px solid #334155;
-    }
+  background-color: #0f172a;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
 
-    .project-card h3 {
-      color: #38bdf8;
-      margin-bottom: 0.5rem;
-    }
+.project-card:hover {
+  background-color: #1e293b;
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
 
     footer {
       text-align: center;
@@ -132,6 +147,7 @@
     <h1>MyPortfolio</h1>
     <nav>
       <a href="contact.html">Contact</a>
+      <a href="about.html">about</a>
     </nav>
   </header>
 
@@ -146,7 +162,7 @@
   </section>
 
   <section class="projects">
-    <h2>Featured Project / Objective</h2>
+    <!--<h2>Featured Project / Objective</h2>-->
     <div class="project-grid">
       <div class="project-card">
         <h3>Project</h3>
