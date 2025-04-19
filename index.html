@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohit Shukla Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #cbd5e1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #1e293b;
+    }
+
+    header h1 {
+      color: #38bdf8;
+      margin: 0;
+    }
+
+    nav a {
+  color: #cbd5e1;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+  text-decoration: underline;
+}
+
+
+    .hero {
+      background-color: #0f172a;
+      padding: 3rem 2rem;
+    }
+
+    .hero-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 70%;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      color: #94a3b8;
+    }
+
+    .hero-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+    }
+
+    .projects {
+      padding: 2rem;
+      background-color: #1e293b;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .project-grid {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .project-card {
+  background-color: #0f172a;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  color: #cbd5e1;
+  border: 1px solid #334155;
+  transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+.project-card:hover {
+  background-color: #1e293b;
+  transform: scale(1.03);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+}
+
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f172a;
+      color: #64748b;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-photo {
+        margin-top: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MyPortfolio</h1>
+    <nav>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">about</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2>Hi, I'm Rohit Shukla</h2>
+        <p>A web developer passionate about building awesome digital experiences.</p>
+      </div>
+      <img src="photo.jpg" alt="Rohit Shukla" class="hero-photo" />
+    </div>
+  </section>
+
+  <section class="projects">
+    <!--<h2>Featured Project / Objective</h2>-->
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project</h3>
+        <p>Attendance Monitoring System designed to track and manage student attendance efficiently.</p>
+      </div>
+      <div class="project-card">
+        <h3>Objective</h3>
+        <p>A dedicated and enthusiastic Computer Science student with strong interest in software development.</p>
+      </div>
+      <div class="project-card">
+        <h3>Skills</h3>
+        <p>• Situational Awareness <br>
+          • Emotional Intelligence <br>
+          • Programming in HTMl <br>
+          • Basics Of Javascript <br>
+          • Python <br>
+          • C language <br>
+          • Exploring Data Structure and Algorithm</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Rohit Shukla. All rights reserved.
+  </footer>
+</body>
+</html>
